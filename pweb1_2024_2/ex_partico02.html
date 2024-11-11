@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <script>
+        function salvar() {
+            alert("Salvo com sucesso!");
+            return false;
+        }
+
+        function excluir() {
+            alert("Excluído com sucesso!");
+        }
+    </script>   
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><strong>Sistema de Gestão Acadêmica</strong></legend>
+        
+        <strong><label for=“plogin">Login:</label></strong><br>
+        <input type="text" id="plogin" name="plogin"><br>
+        <strong><label for=“psenha">Último nome:</label></strong><br>
+        <input type="text" id="psenha" name="psenha">
+    
+        <p></p>
+        <strong><label for="turno">Status:</label></strong>
+        <select name="status" id="status">
+        <option value="ativo">Ativo</option>
+        <option value="inativo">Inativo</option>
+        </select>
+        
+        
+        <p><strong>Tipo:</strong></p>
+        <input type="radio" id="Técnico" name="fav_language" value="Técnico">
+        <label for="Técnico">Técnico</label
+        <input type="radio" id="professor" name="fav_language" value="professor">
+        <label for="professor">Professor</label>
+        <input type="radio" id="aluno" name="fav_language" value="aluno">
+        <label for="aluno">Aluno</label>
+
+        <p></p>
+        <label for="data">Data Criação:</label>
+        <br>
+        <input type="date" id="data" name="data" class="large-input">
+
+        <p></p>
+        <strong>Perfil:</strong>
+        <input type="radio" id="convidado" name="fav_language" value="convidado">
+        <label for="convidado">Convidado</label>
+        <input type="radio" id="administrador" name="fav_language" value="administrador">
+        <label for="administrador">Administrador</label><br>
+
+        <p></p>
+       <strong><label for="observacoes">Observações:</label></strong> <br>
+        <textarea id="observacoes" name="observacoes" rows="4" cols="50" class="large-input"></textarea>
+        
+        
+        
+        <p><strong>Linguagens de programação de sua preferência:</strong></p>
+        <input type="checkbox" id="compras" name="compras" value="m1">
+        <label for="compras">Compras</label>
+        
+        <input type="checkbox" id="biblioteca" name="biblioteca" value="m2">
+        <label for="biblioteca">Biblioteca</label>
+        
+        <input type="checkbox" id="acadêmico" name="acadêmico" value="m3">
+        <label for="acadêmico">Acadêmico</label><br>
+        
+        <input type="checkbox" id="documentacao" name="documentacao" value="m1">
+        <label for="documentacao">Documentação</label>
+        
+        <input type="checkbox" id="rechumanos" name="rechumanos" value="m2">
+        <label for="rechumanos">Recursos Humanos</label><br>
+        
+
+        
+             
+       
+        <br>
+        <button onclick="salvar">Salvar</button>
+        <button onclick="excluir">Excluir</button>
+    </fieldset>
+    
+    </form>    
+</body>
+</html>

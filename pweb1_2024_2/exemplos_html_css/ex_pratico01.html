@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Prático 01</title>
+    <script>
+        function formulario(event){
+        event.preventDefault();
+
+        var primeiro_nome = document.getElementById("pnome").value;
+        var segundo_nome = document.getElementById("unome").value;
+        
+        
+        alert(primeiro_nome + " - " + segundo_nome);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <fieldset>
+        
+        <legend><strong>Formulário Matricula de Curso</strong></legend>
+        
+        <strong><label for="pnome">Primeiro nome:</label></strong><br>
+        <input type="text" id="pnome" name="pnome"><br>
+        <strong><label for="unome">Último nome:</label></strong><br>
+        <input type="text" id="unome" name="unome">
+    
+        <p><strong>Curso:</strong></p>
+        <input type="radio" id="html" name="curso" value="Tecnico em Informática">
+        <label for="html">Técnico em Informática</label><br>
+        <input type="radio" id="css" name="curso" value="Graduação - Análise e Desenvolvimento de Sistemas">
+        <label for="css">Graduação - Análise e Desenvolvimento de Sistemas</label><br>
+        <input type="radio" id="javascript" name="curso" value="Profissionalizante - Programação Web">
+        <label for="javascript">Profissionalizante - Programação Web</label>
+        
+        <p><strong>Linguagens de programação de sua preferência:</strong></p>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> PHP</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> Java</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Python</label>
+        <br>
+        <br>
+        <strong><label for="turnos">Escolha um turno:</label></strong><br>
+        <select name="turnos" id="turnos">
+        <option value="manha">Manhã</option>
+        <option value="tarde">Tarde</option>
+        <option value="noite">Noite</option>
+        </select>
+        <br>
+        <br>
+        <strong><label for="cidade"> Escolha uma unidade mais próximo de você:</label></strong>
+        <input list="cidades" name="cidade" id="cidade">
+        <datalist id="cidades">
+        <option value="Chapecó">
+        <option value="Xanxere">
+        <option value="Cordilheira Alta">
+        </datalist>
+        <br>
+        <br>
+       
+        <input type ="submit" value="Enviar" onclick="formulario(event)"/>
+    </fieldset>
+    </form>
+</body>
+</html>

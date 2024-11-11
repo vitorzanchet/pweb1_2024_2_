@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(128, 198, 255);
+
+}
+
+h1{
+    color: rgb(235, 255, 144);
+    font-family: 'Roboto';
+    padding: 20px;
+}
+p{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    border:solid;
+    border-radius:10px;
+    margin:10px;
+    padding: 3px;
+}
